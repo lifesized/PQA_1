@@ -1,26 +1,20 @@
 <h1>Show all questions</h1>
 <p>This is a learning to code project</p>
-<table>
-  <tr>
-    <th>Question</th>
-     <th>Answer</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+
+<div id="question_list">
+
+<h1>List of questions</h2>
 
 <% @questions.each do |question| %>
-  <tr>
-    
-    <td><%= question.content %></td>
-    <td><%= question.answer %></td>
+  <p>Question: <%= question.content %></p>
+    <p>Answer: <%= question.answer %></p>
 
-    <td><%= link_to 'Show', question %></td>
-    <td><%= link_to 'Edit', edit_question_path(question) %></td>
-    <td><%= link_to 'Destroy', question, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
+    <span><%= link_to 'Show', question %></span>
+    <span><%= link_to 'Edit', edit_question_path(question) %></span>
+    <span><%= link_to 'Destroy', question, confirm: 'Are you sure?', method: :delete %></span>
+  
 <% end %>
-</table>
+</div>
 
 <br />
 

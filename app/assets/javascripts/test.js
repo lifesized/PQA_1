@@ -4,9 +4,9 @@
    
  $(document).ready(function() 
  {
-   $("table tr").text("wanker");
+   //$("table tr").text("wanker");
    $("a").click(function() {
-     alert("Hello world!");
+     //alert("Hello world!");
    });
  }
  
@@ -14,4 +14,4 @@
    
 
 
-alert('shit');
+//alert('shit');
