@@ -1,24 +1,37 @@
+<div id="container">
 <h1>Show all questions</h1>
 <p>This is a learning to code project</p>
-
-<div id="question_list">
-
-<h1>List of questions</h2>
-
-<% @questions.each do |question| %>
-  <p>Question: <%= question.content %></p>
-    <p>Answer: <%= question.answer %></p>
-
-    <span><%= link_to 'Show', question %></span>
-    <span><%= link_to 'Edit', edit_question_path(question) %></span>
-    <span><%= link_to 'Destroy', question, confirm: 'Are you sure?', method: :delete %></span>
+<div id="content-left">
+ 
+  <div id="question_list">
   
-<% end %>
+  <% @questions.each do |question| %>
+  <p>
+    <span class="question_action">Question added: <script type="text/javascript">document.write(date); </script></span></br>
+    <span class="question_title"><%= question.content %></span> </br>
+  
+    <span class="answer"> <%= question.answer %></span>
+  </p><span ><%= link_to '/questions/#{edit_button.id}', edit_question_path(question) %></span>
+    <hr> </hr>
+  <% end %>
+  </div>
+
+
+  <br />
+
+    <%= link_to 'New Question', new_question_path %>
+
+  </div>
+
+
+
+</div>
+  <div id="dashboard" > 
+
+  <h2>Personal navigator dashboard</h2>
+
+  <p>see plan for year<p>
+  </p>
 </div>
 
-<br />
-
-<%= link_to 'New Question', new_question_path %>
-
-
-
+</div>

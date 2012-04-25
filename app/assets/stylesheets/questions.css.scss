@@ -1,3 +1,51 @@
 // Place all the styles related to the questions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#container {
+width:900px;
+
+}
+
+#question_list {
+width:250px;
+float:left;
+}
+
+
+.title {
+color: #333;
+font-size: 1.1em; 
+}
+
+
+#content-left {
+	margin-left:25px;
+
+}
+
+#question_list {
+    width:550px;
+       .question_action { color: #999; font-size: 0.7em;  }
+       .question_title { font-family: 'Trocchi', serif; font-weight:bold; color: #333; font-size: 1.6em;   }
+       .answer { font-family: 'Cutive', serif; color: #333; font-size: 1.0em;  }
+}
+
+.edit_button{
+//background:url:"path/edit_button.png";
+
+}
+// Question styles
+
+
+
+
+
+
+#dashboard {
+width:250px;
+clear:right;
+float: right;
+
+}
